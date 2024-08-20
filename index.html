@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeCart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>FakéCart</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands, and more" id="search-bar">
+                <!-- <button id="search-btn">Search</button> -->
+            </div>
+            <div class="nav-links">
+                <a href="login.html" id="login-btn">Login</a>
+                <a href="cart.html" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <ul>
+                <li><a  href="#electronics1">Electronics</a>
+                    <ul>
+                        <li><a class="white" href="#electronics1" style="text-decoration: none;">Mobiles</a></li>
+                        <li><a class="white" href="#electronics1" style="text-decoration: none;">Laptops</a></li>
+                        <li><a class="white" href="#electronics1" style="text-decoration: none;">Cameras</a></li>
+                    </ul>
+                </li>
+                <li><a href="#fashion1">Fashion</a>
+                    <ul>
+                        <li><a class="white" href="#fashion1" style="text-decoration: none;">Men</a></li>
+                        <li><a class="white" href="#fashion1" style="text-decoration: none;">Women</a></li>
+                    </ul>
+                </li>
+                <li><a href="#furniture1">Home & Furniture</a>
+                    <ul>
+                        <li><a class="white" href="#furniture1" style="text-decoration: none;">Furniture</a></li>
+                        <li><a class="white" href="#furniture1" style="text-decoration: none;">Kitchen</a></li>
+                        <li><a class="white" href="#furniture1" style="text-decoration: none;">Decor</a></li>
+                    </ul>
+                </li>
+                <li><a href="#appliances1">Appliances</a>
+                    <ul>
+                        <li><a class="white" href="#appliances1" style="text-decoration: none;">TVs</a></li>
+                        <li><a class="white" href="#appliances1" style="text-decoration: none;">Washing Machines</a></li>
+                        <li><a class="white" href="#appliances1" style="text-decoration: none;">Refrigerators</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner Section with Multiple Images -->
+        <div class="banner">
+            <div class="slider">
+                <div class="slide">
+                    <img src="new banner 1.png" alt="Banner 1">
+                </div>
+                <div class="slide">
+                    <img src="new banner 2.png" alt="Banner 2">
+                </div>
+                <div class="slide">
+                    <img src="new banner 3.png" alt="Banner 3">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <h2>Today's Deals - Fashion</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img id="fashion1" src="clothes 1.webp" alt="Product 1">
+                    <h3>Women-Shirt</h3>
+                    <p>₹5,000</p>
+                    <button class="add-to-cart-btn" data-price="500">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img id="fashion1" src="cloth - 2.jpeg" alt="Product 2">
+                    <h3>Women-Jacket</h3>
+                    <p>₹1,000</p>
+                    <button class="add-to-cart-btn" data-price="1000">Add to Cart</button>
+                </div>
+                <div id="fashion1" class="product">
+                    <img src="clothes-4.jpeg" alt="Product 3">
+                    <h3>Men-Coat</h3>
+                    <p>₹1,500</p>
+                    <button class="add-to-cart-btn" data-price="1500">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img id="fashion1" src="clothes-5.jpeg" alt="Product 4">
+                    <h3>Men-White Shirt</h3>
+                    <p>₹2,000</p>
+                    <button class="add-to-cart-btn" data-price="2000">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals">
+            <h2>Today's Deals - Electronics</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img id="electronics1" src="mobile1.jpeg" alt="Product 5">
+                    <h3>iPhone 16 Pro</h3>
+                    <p>₹300,000</p>
+                    <button class="add-to-cart-btn" data-price="3000">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="laptop1.webp" alt="Product 6">
+                    <h3>AI Advanced - Laptop</h3>
+                    <p>₹350,000</p>
+                    <button class="add-to-cart-btn" data-price="3500">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="headphone.jpg" alt="Product 7">
+                    <h3>Ai Advanced- Headphone</h3>
+                    <p>₹40,000</p>
+                    <button class="add-to-cart-btn" data-price="4000">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="camera.jpg" alt="Product 8">
+                    <h3>Ai Advanced - Camera</h3>
+                    <p>₹45,000</p>
+                    <button class="add-to-cart-btn" data-price="4500">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals">
+        <h2>Today's Deals - Home & Furniture</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img id="furniture1" src="furniture.jpg" alt="Product 9">
+                <h3>Sofa</h3>
+                <p>₹30,000</p>
+                <button class="add-to-cart-btn" data-price="3000">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="furniture1" src="kitchen.jpg" alt="Product 10">
+                <h3>Kitchen Utensils</h3>
+                <p>₹3,500</p>
+                <button class="add-to-cart-btn" data-price="3500">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="furniture1" src="homedecor.jpg" alt="Product 11">
+                <h3>Flask</h3>
+                <p>₹40,000</p>
+                <button class="add-to-cart-btn" data-price="4000">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="furniture1" src="cupboard.jpg" alt="Product 12">
+                <h3>Cupboard</h3>
+                <p>₹45,000</p>
+                <button class="add-to-cart-btn" data-price="4500">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals">
+        <h2>Today's Deals - Appliances</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img id="appliances1" src="tv.jpg" alt="Product 13">
+                <h3>Television</h3>
+                <p>₹30,000</p>
+                <button class="add-to-cart-btn" data-price="3000">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="appliances1" src="Refrigrator.jpg" alt="Product 14">
+                <h3>Refrigerators</h3>
+                <p>₹3,500,000</p>
+                <button class="add-to-cart-btn" data-price="3500">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="appliances1" src="wshing.jpg" alt="Product 15">
+                <h3>Washing Machine</h3>
+                <p>₹40,000</p>
+                <button class="add-to-cart-btn" data-price="4000">Add to Cart</button>
+            </div>
+            <div id="appliances1" class="product">
+                <img src="paintbrush.jpg" alt="Product 16">
+                <h3>Paintbrush Set</h3>
+                <p>₹4,500</p>
+                <button class="add-to-cart-btn" data-price="4500">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Policy</h3>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Flipkart Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
