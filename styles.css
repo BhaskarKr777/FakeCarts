@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #2874f0;
+    padding: 0px 20px;
+    color: white;
+    /* position: fixed;
+    width: 100%; */
+}
+
+/* Banner Slider */
+.banner {
+    display:flex;
+    width: 100%;
+    overflow: hidden;
+    position: flex;
+}
+
+.slider {
+    display: flex;
+    width: 100%; /* If there are 3 images */
+    height: auto;
+    animation: slide 20s infinite; /* 3 images * 3s per image = 9s */
+}
+
+.slide {
+    display:flex;
+    width: 100%;
+    height: auto;
+    flex: 1 0 100%;
+}
+
+.slide img {
+    display:flex;
+    width: 100%;
+    height: auto;
+}
+
+/* Keyframe animation for sliding */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.white{
+    color: white;
+    padding: 5px;
+}
+
+
+.logo {
+    font-size: 24px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+#search-btn, #login-btn, #cart-btn {
+    padding: 8px 16px;
+    background-color: #ff9f00;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.dropdown {
+    background-color: #2874f0;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown > ul > li {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown > ul > li > a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown ul ul {
+    display: none;
+    position: absolute;
+    background-color: #2874f0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown > ul > li:hover > ul {
+    display: block;
+}
+
+.dropdown ul ul li {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.featured-products,
+.new-arrivals {
+    margin-top: 20px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 0 21%; /* Adjusts the width of the product cards */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn {
+    padding: 8px 16px;
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #2874f0;
+    color: white;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2874f0;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown > ul > li {
+        display: block;
+    }
+}
