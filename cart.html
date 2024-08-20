@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - FakeCart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>FakéCart</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <!-- <a href="cart.html">Cart (<span id="cart-count">0</span>)</a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Content -->
+    <main>
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be injected here by JavaScript -->
+        </div>
+        <div class="cart-summary">
+            <h3>Total: ₹<span id="cart-total">0</span></h3>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+        <!-- Checkout Section -->
+        <div class="checkout-section" id="checkout-section" style="display: none;">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label #checkout-section for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Shipping Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FakeCart. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+        // Show the checkout section when "Proceed to Checkout" is clicked
+        document.getElementById('checkout-btn').addEventListener('click', function() {
+            document.getElementById('checkout-section').style.display = 'block';
+        });
+
+        // Handle form submission
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Purchase Completed! Thank you for shopping with FakeCart.');
+            // Clear cart and reset the page or redirect as needed
+        });
+    </script>
+</body>
+</html>
